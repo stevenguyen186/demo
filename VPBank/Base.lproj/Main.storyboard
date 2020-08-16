@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rkq-5n-51z">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VPBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtT-p0-7dK">
-                                <rect key="frame" x="47" y="156.5" width="320" height="400"/>
+                                <rect key="frame" x="288" y="30" width="320" height="400"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vpb-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WUO-bT-EnT">
                                         <rect key="frame" x="85" y="16" width="150" height="150"/>
@@ -36,7 +36,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Duc Van" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-8R-NBe">
-                                        <rect key="frame" x="103" y="257" width="114.5" height="18"/>
+                                        <rect key="frame" x="102.5" y="257" width="115" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="OYQ-S6-TGN"/>
                                         </constraints>
@@ -74,7 +74,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wtT-p0-7dK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0zq-g3-FfG"/>
-                            <constraint firstItem="wtT-p0-7dK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="1bF-vl-p6s"/>
+                            <constraint firstItem="wtT-p0-7dK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" priority="750" id="1bF-vl-p6s"/>
+                            <constraint firstItem="wtT-p0-7dK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="fPh-XA-xEk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -92,11 +93,11 @@
             <objects>
                 <viewController storyboardIdentifier="TimesheetViewController" id="U07-Kp-3my" customClass="TimesheetViewController" customModule="VPBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hm7-W8-p6G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXK-bc-pL9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewLayout key="collectionViewLayout" id="jw7-Lp-e6K"/>
                                 <cells>
@@ -150,7 +151,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimespanCollectionViewCell" id="qu2-0U-Ua2" customClass="TimespanCollectionViewCell" customModule="VPBank" customModuleProvider="target">
-                                        <rect key="frame" x="264" y="0.0" width="150" height="80"/>
+                                        <rect key="frame" x="164.5" y="0.0" width="150" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4Mo-7S-6Ca">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
@@ -185,7 +186,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmployeeCollectionViewCell" id="Nha-x6-bpR" customClass="EmployeeCollectionViewCell" customModule="VPBank" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="90" width="150" height="80"/>
+                                        <rect key="frame" x="329" y="0.0" width="150" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WWX-W5-kdR">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
@@ -249,7 +250,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rkq-5n-51z" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t2Q-g7-oVb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
